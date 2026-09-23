@@ -1,56 +1,54 @@
 # Facebook Marketplace Dataset
 EDA and analysis of the Facebook Live Sellers in Thailand dataset (7,050 posts from 10 Thai fashion &amp; cosmetics retailers). Explores engagement metrics, post types, and publishing patterns using Python, pandas, and visualization libraries.
 
-# Facebook Live Sellers in Thailand – Data Analysis
+# Facebook Live Sellers in Thailand – Machine Learning Case Project
 
-An exploratory data analysis (EDA) of the **Facebook Live Sellers in Thailand** dataset, examining engagement patterns across 7,050 posts from 10 Thai fashion and cosmetics retailers.
+A machine learning project using the **Facebook Live Sellers in Thailand** dataset to analyse and predict engagement levels of social commerce posts using classification and regression models.
 
 ## 📌 Overview
 
-This project analyzes social commerce activity on Facebook Live, focusing on how different post types and publishing times influence customer engagement. Using Python, pandas, and visualization libraries, it uncovers trends in reactions, comments, and shares — providing insights for sellers looking to optimize their content strategy.
+This project uses **7,050 Facebook posts** from **10 Thai fashion and cosmetics retailers**. It applies machine learning techniques to analyse engagement such as reactions, comments and shares.
+
+The project covers the full ML process, including **data cleaning, feature engineering, model training, evaluation and analysis**.
+
+## 🎯 Problem Statement
+
+This project aims to:
+
+* **Predict engagement levels** based on post type, timing and other features.
+* **Identify important features** related to customer engagement.
+* **Analyse patterns** in reactions, comments and shares.
 
 ## 📂 Dataset
 
-- **Title:** Facebook Live Sellers in Thailand Dataset
-- **Source:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Facebook+Live+Sellers+in+Thailand)
-- **Format:** CSV (tabular)
-- **Instances:** 7,050 rows
-- **Attributes:** 16 (14 after removing redundant columns)
-- **Missing Values:** Present — handled during preprocessing
+* **Title:** Facebook Live Sellers in Thailand Dataset
+* **Source:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Facebook+Live+Sellers+in+Thailand)
+* **Rows:** 7,050
+* **Columns:** 16
+* **Missing Values:** Present — handled during preprocessing
 
-### Attribute Information
+### Main Attributes
 
-| Attribute | Description |
-|---|---|
-| `status_id` | Unique identifier for each status post |
-| `status_published` | Date and time when the post was published |
-| `status_type` | Nature of post (video, photo, status, link) |
-| `num_reactions` | Total reactions (likes, loves, wow, haha, sad, angry) |
-| `num_comments` | Number of comments received |
-| `num_shares` | Number of shares received |
-| `num_likes` | Number of "Like" reactions |
-| `num_loves` | Number of "Love" reactions |
-| `num_wows` | Number of "Wow" reactions |
-| `num_hahas` | Number of "Haha" reactions |
-| `num_sads` | Number of "Sad" reactions |
-| `num_angrys` | Number of "Angry" reactions |
-| *(+ additional engagement & categorical attributes)* | |
-
-## ❓ Analysis Questions
-
-1. What is the distribution of post types (video, photo, status, link)?
-2. Which post type generates the most reactions, comments, and shares?
-3. How does engagement vary across the 10 sellers?
-4. What are the peak publishing times (hour, day, month)?
-5. What is the distribution of each reaction type (likes, loves, wow, haha, sad, angry)?
-6. Are there correlations between reactions, comments, and shares?
-7. How do missing values impact the dataset?
-8. What trends can be observed in engagement over time?
+| Attribute          | Description                               |
+| ------------------ | ----------------------------------------- |
+| `status_id`        | Unique ID for each post                   |
+| `status_published` | Date and time of the post                 |
+| `status_type`      | Type of post (video, photo, status, link) |
+| `num_reactions`    | Total number of reactions                 |
+| `num_comments`     | Number of comments                        |
+| `num_shares`       | Number of shares                          |
+| `num_likes`        | Number of likes                           |
+| `num_loves`        | Number of love reactions                  |
+| `num_wows`         | Number of wow reactions                   |
+| `num_hahas`        | Number of haha reactions                  |
+| `num_sads`         | Number of sad reactions                   |
+| `num_angrys`       | Number of angry reactions                 |
 
 ## 🛠️ Tech Stack
 
-- **Language:** Python
-- **Libraries:** pandas, numpy, matplotlib, seaborn
-- **Environment:** Jupyter Notebook / Python script
-
-## 📁 Repository Structure
+* Python
+* pandas
+* NumPy
+* matplotlib
+* seaborn
+* scikit-learn
