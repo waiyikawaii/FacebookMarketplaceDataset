@@ -52,3 +52,10 @@ This project aims to:
 * matplotlib
 * seaborn
 * scikit-learn
+* 
+## 🚀 How to Run
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+python "ML_Facebook Live Sellers Dataset.py"
+```
