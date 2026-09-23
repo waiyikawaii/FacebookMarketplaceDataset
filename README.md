@@ -52,7 +52,7 @@ This project aims to:
 * matplotlib
 * seaborn
 * scikit-learn
-* 
+
 ## 🚀 How to Run
 
 ```bash
